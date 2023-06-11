@@ -1,0 +1,121 @@
+.containerCart {
+    padding: 3%;
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #cbcbcb;
+}
+
+.imageContainer {
+    /* flex: 1; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contentContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    height: 70vh;
+    color: aliceblue;
+}
+
+.casco {
+    max-width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+.contentContainer h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: fantasy;
+}
+
+.contentContainer p {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: fantasy;
+}
+
+@media screen and (min-width: 768px) {
+    .containerCart {
+        flex-direction: row;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .imageContainer {
+        justify-content: center;
+        /* padding-right: 4%; */
+    }
+
+    .contentContainer {
+        padding-left: 4%;
+    }
+
+    .contentContainer h1 {
+        font-size: 3rem;
+    }
+
+    .contentContainer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .containerCart {
+        padding: 1%;
+    }
+
+    /* .imageContainer {
+        padding-right: 6%;
+    } */
+
+    .contentContainer {
+        padding-left: 6%;
+    }
+
+    .contentContainer h1 {
+        font-size: 4rem;
+    }
+
+    .contentContainer p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    * {
+        font-size: 2pc;
+    }
+
+    .containerCart {
+        flex-direction: column;
+        background-color: #333;
+        height: 94vh;
+    }
+
+    .casco {
+        border-radius: 50%;
+        width: 35vh;
+    }
+
+    .navbar {
+        height: 9pc;
+    }
+
+    .containerLink {
+        gap: 4pc;
+    }
+
+    .containerLink a {
+        font-size: 3pc;
+    }
+
+}

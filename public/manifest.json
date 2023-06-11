@@ -1,0 +1,35 @@
+{
+  "background_color": "#ffffff",
+  "categories": [
+    "lifestyle",
+    "music"
+  ],
+  "description": "Esta es una PWA de prueba para mi gente",
+  "dir": "ltr",
+  "display_override": [
+    "standalone",
+    "fullscreen"
+  ],
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any "
+    }
+  ],
+  "lang": "es-MX",
+  "name": "PWA de keyner",
+  "orientation": "portrait",
+  "prefer_related_application": false,
+  "scope": "/",
+  "short_name": "PWA de keyner",
+  "start_url": "/",
+  "theme_color": "orange"
+}

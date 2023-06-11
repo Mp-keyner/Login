@@ -1,0 +1,150 @@
+body {
+    color: black;
+}
+
+:root {
+    --fonfo: #eeb90b;
+    --colorLetras: #000
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fonfo);
+    padding: 0 1pc;
+    height: 5pc;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.loga {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--colorLetras);
+    margin-right: 20px;
+}
+
+.loga {
+    font-family: fantasy;
+    font-weight: 100;
+
+}
+
+.logo-text {
+    cursor: pointer;
+}
+
+.navbarX {
+    background-color: transparent;
+    /* position: absolute;
+    left: 13pc;
+    top: 8px; */
+    border: none;
+    color: var(--colorLetras);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    position: absolute;
+    left: 13pc;
+    top: 8px;
+    border: none;
+    color: var(--colorLetras);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1pc;
+    flex-direction: column;
+    background-color: var(--fonfo);
+    position: fixed;
+    top: 0;
+    left: -40px;
+    height: 100vh;
+    width: 200px;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.logout {
+    position: absolute;
+    top: 89%;
+}
+
+.logout button {
+    width: 13pc;
+    height: 2pc;
+    border-radius: 5px;
+    background: #00000026;
+    color: #000000;
+    border: none;
+}
+
+.logout button:hover {
+    box-shadow: 0px 4px 20px 0px #000000ad;
+}
+
+.navbar-links.open {
+    transform: translateX(2pc);
+}
+
+.navbar-link {
+    color: var(--colorLetras);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 11pc;
+    height: 2pc;
+    display: flex;
+    align-items: center;
+    padding: 0 1pc;
+}
+
+.containerLink {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+.firs {
+    margin-top: 5pc;
+}
+
+.navbar-link:hover {
+    /* color: #ffbc03; */
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width:980px) {
+    .navbar-links {
+        padding-top: 11pc;
+        width: 26vh;
+        left: -19pc;
+        height: 89vh;
+        /* background-color: red; */
+    }
+
+    .navbar-toggle {
+        top: 3pc;
+        left: 26pc;
+    }
+
+    .navbar-links.open {
+        transform: translateX(19pc);
+    }
+
+    .logout button {
+        width: 28pc;
+        height: 6pc;
+    }
+}
